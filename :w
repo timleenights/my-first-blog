@@ -20,7 +20,8 @@
     var simplemde = new SimpleMDE({
       element: $('#simplemde').children('textarea')[0],
       renderingConfig: {
-        codeSyntaxHighlighting: true
+        singleLineBreaks: false,
+        codeSyntaxHighlighting: true,
       }
     });
     simplemde.value();
