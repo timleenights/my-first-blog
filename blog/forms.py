@@ -1,8 +1,14 @@
-from django.forms import ModelForm, Textarea
-from .models import Post
+from django.forms import ModelForm
+from .models import Post, Comment
 
 
 class PostForm(ModelForm):
     class Meta:
         model = Post
         fields = ('title', 'text',)
+
+
+class CommentForm(ModelForm):
+    class Meta:
+        model = Comment
+        fields = ('author', 'text',)
